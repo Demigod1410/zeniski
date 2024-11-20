@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import {Inter} from "next/font/google";
+
+
+const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Zeniski",
@@ -12,8 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="dark">
+      <body >
+        
+        <div className="relative w=full flex items-center justify-center">
+        <NavBar/>
+        </div>
         {children}
       </body>
     </html>
