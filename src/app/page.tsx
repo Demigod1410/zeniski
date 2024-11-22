@@ -1,7 +1,7 @@
 import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
-
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -9,9 +9,9 @@ export default function Home() {
       <HeroSection />
 
       <Features />
-      <div >
       <WhyChooseUs  />
-      </div>
+     
+      <Footer/>
     </main>
   );
 }
