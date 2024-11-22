@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function HeroSection () {
     return (
-      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 bg-black">
+      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 bg-black h-screen">
         <div className="h-screen w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
      
       

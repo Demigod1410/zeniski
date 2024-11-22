@@ -44,12 +44,12 @@ function Features() {
 	return (
 		<div className="py-12 bg-black-900 h-screen flex flex-col gap-5 sm:gap-20">
 
-			<div className="text-center">
+			<div className="text-center ">
 				<h2 className="mt-20 md:mt-0 text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Powerful Features</h2>
 				<p className="mt-5  leading-8  tracking-tight text-white ">Everything you need to boost your productivity and social presence</p>
 			</div>
-			<div className="sm:mx-24 mx-8">
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8 justify-center">
+			<div className="sm:mx-24 mx-8 gap-9">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-8 justify-center">
 					{threeElements.map((benefit, index) => (
 						<FeatureCard
 							key={index}
