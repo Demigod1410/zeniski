@@ -18,7 +18,7 @@ function HeroSection () {
           >Where Productivity Meets Purpose—Complete Tasks, Share Achievements, Level Up, and Inspire Others Along the Way!</p>
           
           <div className="mt-4">
-                <Link href={"/"}>
+                <Link href={"/dashboard"}>
                 <Button
                     borderRadius="2rem"
                     // className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-1000"

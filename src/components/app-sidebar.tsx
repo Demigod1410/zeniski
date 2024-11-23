@@ -1,70 +1,65 @@
-import * as React from "react"
+"use client";
 
-import { SearchForm } from "@/components/search-form"
-import { VersionSwitcher } from "@/components/version-switcher"
+import * as React from "react";
+
 import {
   Sidebar,
   SidebarContent,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
-  SidebarRail,
-} from "@/components/ui/sidebar"
+  SidebarRail
+} from "@/components/ui/sidebar";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "./ui/button";
 
 // This is sample data.
-const data = {
-  versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
-  navMain: [
-    {
-      title: "Dashboard",
-      url: "#",
-      items: [
-        {
-          title: "Add Task",
-          url: "#",
-          isActive: false,
-        },
-        {
-          title: "View Tasks",
-          url: "#",
-        },
-        {
-          title: "Analytics",
-          url: "#",
-        },
-      ],
-    },
-  ],
-}
+
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const currentPath = usePathname();
+
+  const menu = [
+    {
+      title: "Overview",
+      url: "/dashboard",
+      isActive: currentPath === "/dashboard",
+    },
+    {
+      title: "Add Task",
+      url: "/dashboard/add-task",
+      isActive: currentPath === "/dashboard/add-task",
+    },
+    {
+      title: "View Tasks",
+      url: "/dashboard/view-tasks",
+      isActive: currentPath === "/dashboard/view-tasks",
+    },
+    {
+      title: "Analytics",
+      url: "/dashboard/analytics",
+      isActive: currentPath === "/dashboard/analytics",
+    },
+  ]
+
   return (
     <Sidebar {...props}>
-      <div className="flex justify-center items-center border border-white m-5 rounded-full">
-        <h1 className="text-2xl font-bold text-white p-5">LOGO</h1>
-      </div>
-      <SidebarContent>
-        {/* We create a SidebarGroup for each parent. */}
-        {data.navMain.map((item) => (
-          <SidebarGroup key={item.title}>
-            <SidebarGroupLabel>{item.title}</SidebarGroupLabel>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                {item.items.map((item) => (
-                  <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild isActive={item.isActive}>
-                      <a href={item.url}>{item.title}</a>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        ))}
+      <SidebarHeader>
+        {/* <Link href="/dashboard">
+          <Image src={cbsLogo} alt="CBS" width={449} height={212} className="m-auto max-w-24" />
+        </Link> */}
+      </SidebarHeader>
+      <SidebarContent className="mt-10">
+        <SidebarMenu>
+          {menu.map((item) => ((
+            <SidebarMenuItem key={item.title}>
+              <Button asChild variant={item.isActive ? "secondary" : "ghost"} className="w-full justify-start px-10">
+                <Link href={item.url}>{item.title}</Link>
+              </Button>
+            </SidebarMenuItem>
+          )))}
+        </SidebarMenu>
       </SidebarContent>
       <SidebarRail />
     </Sidebar>
