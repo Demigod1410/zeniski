@@ -45,7 +45,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300"
                 >
-                  Contact
+                  Analytics
                 </a>
               </li>
             </ul>

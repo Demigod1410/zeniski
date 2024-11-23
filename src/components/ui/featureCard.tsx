@@ -15,7 +15,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({icon, heading, subheading}) =>
             <BackgroundGradient>
                 <div className="rounded-[22px] p-5 sm:p-8 bg-black dark:bg-zinc-900">
                     <div className="">
-                        <div className='flex pb-5 gap-5'>
+                        <div className='flex pb-5 gap-6'>
 
                         <Image src={icon} width={30} className='text-black bg-trasparent' alt={'icon'} />
                         <p className="text-sm font-bold sm:text-base text-gray-300 dark:text-neutral-900">

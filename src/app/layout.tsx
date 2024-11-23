@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Inter } from "next/font/google";
+import "./globals.css";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,10 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body >
-
-        <div className="relative w=full flex items-center justify-center">
-
+      <body className={inter.className}>
+        <div className="relative w-full flex items-center justify-center ">
+          
         </div>
         {children}
       </body>
