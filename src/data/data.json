@@ -8,8 +8,44 @@
       "startTime": "06:32",
       "endTime": "14:30",
       "status": "queued",
+      "exp": "100",
       "id": "1732403719919",
       "createdAt": "2024-11-23T23:15:19.919Z"
+    },
+    {
+      "title": "Something New",
+      "description": "This task will also be added to view tasks",
+      "startDate": "2024-11-25T18:30:00.000Z",
+      "endDate": "2024-11-28T18:30:00.000Z",
+      "startTime": "10:30",
+      "endTime": "12:30",
+      "status": "completed",
+      "exp": "200",
+      "id": "1732404111214",
+      "createdAt": "2024-11-23T23:21:51.214Z"
+    },
+    {
+      "title": "Test 3",
+      "description": "This is the real test to check the form",
+      "startDate": "2024-11-26T18:30:00.000Z",
+      "endDate": "2024-11-29T18:30:00.000Z",
+      "startTime": "12:30",
+      "endTime": "10:50",
+      "status": "queued",
+      "exp": "50",
+      "id": "1732404179469",
+      "createdAt": "2024-11-23T23:22:59.469Z"
+    },
+    {
+      "title": "Complete User profile",
+      "description": "Complete the user profile",
+      "startDate": "2024-11-23T18:30:00.000Z",
+      "endDate": "2024-11-24T18:30:00.000Z",
+      "startTime": "08:00",
+      "endTime": "22:00",
+      "status": "queued",
+      "id": "1732405753846",
+      "createdAt": "2024-11-23T23:49:13.847Z"
     }
   ]
 }

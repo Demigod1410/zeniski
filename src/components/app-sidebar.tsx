@@ -46,9 +46,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
-        {/* <Link href="/dashboard">
-          <Image src={cbsLogo} alt="CBS" width={449} height={212} className="m-auto max-w-24" />
-        </Link> */}
+        <Link href="/dashboard">
+          <h1 className="text-2xl font-bold text-center mt-10">LOGO</h1>
+        </Link>
       </SidebarHeader>
       <SidebarContent className="mt-10">
         <SidebarMenu>
