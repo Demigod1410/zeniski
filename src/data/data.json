@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "title": "Something",
+      "description": "This is just some task that is added",
+      "startDate": "2024-11-23T18:30:00.000Z",
+      "endDate": "2024-11-23T18:30:00.000Z",
+      "startTime": "06:32",
+      "endTime": "14:30",
+      "status": "queued",
+      "id": "1732403719919",
+      "createdAt": "2024-11-23T23:15:19.919Z"
+    }
+  ]
+}
