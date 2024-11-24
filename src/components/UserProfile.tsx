@@ -2,7 +2,7 @@
 import React from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils";
 import {
   IconBrandGithub,
   IconBrandGoogle,
@@ -40,6 +40,11 @@ export function UserProfile() {
         
         <LabelInputContainer className="mb-4 ">
           <Label className="text-neutral-200"htmlFor="password">Edit Password</Label>
+          <Input className="bg-slate-900"id="password" placeholder="••••••••" type="password" />
+        </LabelInputContainer>
+
+        <LabelInputContainer className="mb-4 ">
+          <Label className="text-neutral-200"htmlFor="password">Confirm Password</Label>
           <Input className="bg-slate-900"id="password" placeholder="••••••••" type="password" />
         </LabelInputContainer>
 
