@@ -13,8 +13,8 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
-// This is sample data.
 
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -46,15 +46,21 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
-        <Link href="/dashboard">
-          <h1 className="text-2xl font-bold text-center mt-10">LOGO</h1>
-        </Link>
+      <div className="border w-fit rounded-full mx-auto mt-5">
+                <Image
+                    src="/logo.png"
+                    alt="Zeniski Logo"
+                    width={100}
+                    height={100}
+                    className="object-contain"
+                />
+      </div>
       </SidebarHeader>
-      <SidebarContent className="mt-10">
+      <SidebarContent className="mt-5 mx-auto flex items-center">
         <SidebarMenu>
           {menu.map((item) => ((
             <SidebarMenuItem key={item.title}>
-              <Button asChild variant={item.isActive ? "secondary" : "ghost"} className="w-full justify-start px-10">
+              <Button asChild variant={item.isActive ? "secondary" : "ghost"} className="w-full flex items-center justify-center px-20">
                 <Link href={item.url}>{item.title}</Link>
               </Button>
             </SidebarMenuItem>

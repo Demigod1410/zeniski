@@ -49,7 +49,6 @@ const formSchema = z.object({
   const endDateTime = new Date(data.endDate);
   endDateTime.setHours(endHours, endMinutes, 0);
 
-  // If start date is today, check if start time is in the future
   if (isToday(data.startDate)) {
     const currentTotalMinutes = currentHours * 60 + currentMinutes;
     const startTotalMinutes = startHours * 60 + startMinutes;
@@ -59,10 +58,9 @@ const formSchema = z.object({
     }
   }
   
-  // Ensure end datetime is after start datetime
   return endDateTime > startDateTime;
 }, {
-  message: "Invalid date/time selection. Ensure start time is in the future and end date/time is after start date/time.",
+  message: "Invalid date/time selection. Please select a valid date/time.",
   path: ["startTime"],
 });
 
@@ -127,7 +125,7 @@ export default function AddTaskPage() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 sm:max-w-full sm:mx-0">
+    <div className="mx-auto p-6 sm:max-w-full sm:mx-10 lg:mx-20 xl:mx-48">
       <h1 className="text-2xl sm:text-3xl font-bold mb-6">Add New Task</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
@@ -255,7 +253,7 @@ export default function AddTaskPage() {
               name="startTime"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Start Time (24-hour format)</FormLabel>
+                  <FormLabel>Start Time</FormLabel>
                   <FormControl>
                     <Input type="time" step="60" {...field} />
                   </FormControl>
@@ -269,7 +267,7 @@ export default function AddTaskPage() {
               name="endTime"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>End Time (24-hour format)</FormLabel>
+                  <FormLabel>End Time</FormLabel>
                   <FormControl>
                     <Input type="time" step="60" {...field} />
                   </FormControl>
@@ -279,7 +277,7 @@ export default function AddTaskPage() {
             />
           </div>
 
-          <Button type="submit" className="w-full md:w-auto">Add Task</Button>
+          <Button type="submit" className="w-full md:w-auto hover:opacity-50">Add Task</Button>
         </form>
       </Form>
     </div>

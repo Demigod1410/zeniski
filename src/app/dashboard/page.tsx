@@ -2,6 +2,6 @@
 
 export default function Page() {
   return (
-    <div>Overview</div>
+    <div className="flex justify-center items-center h-[100%]">Overview</div>
   )
 }
