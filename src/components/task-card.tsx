@@ -1,5 +1,7 @@
 // src/components/task-card.tsx
 import { useRouter } from 'next/navigation';
+import { Zap } from 'lucide-react';
+import Image from 'next/image';
 
 interface Task {
     id: string;
@@ -31,11 +33,13 @@ const TaskCard = ({ task }: { task: Task }) => {
             <div className="flex items-center justify-between mb-2">
                 <h3 className="text-lg font-semibold truncate flex-1 mr-4">{task.title}</h3>
                 <div className="flex items-center gap-4 flex-shrink-0">
-                    <span className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded">
-                        <span>{task.exp || 100} pts</span>
-                    </span>
+                    
                     <span className={`px-3 py-1 rounded-full text-sm text-white ${statusStyles[task.status]}`}>
                         {task.status}
+                    </span>
+                    <span className="flex items-center gap-1 text-black bg-yellow-300 px-2 py-1 rounded">
+                        <Zap className="w-4 h-4 text-orange-600 fill-orange-600" />
+                        <span>{task.exp || 100} pts</span>
                     </span>
                 </div>
             </div>

@@ -80,46 +80,69 @@ export default function AddTaskPage() {
   const { toast } = useToast();
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const currentDateTime = new Date();
-    const taskStartDateTime = new Date(values.startDate);
-    const [startHours, startMinutes] = values.startTime.split(":").map(Number);
-    taskStartDateTime.setHours(startHours, startMinutes, 0);
-    
-    const taskEndDateTime = new Date(values.endDate);
-    const [endHours, endMinutes] = values.endTime.split(":").map(Number);
-    taskEndDateTime.setHours(endHours, endMinutes, 0);
-  
-    let status = "queued";
-    if (isBefore(taskEndDateTime, currentDateTime)) {
-      status = "pending";
-    }
-  
-    const taskData = {
-      ...values,
-      status,
-    };
-  
     try {
-      const response = await fetch('/api/tasks', {
+      // Calculate task duration and format dates
+      const startDateTime = new Date(values.startDate);
+      const endDateTime = new Date(values.endDate);
+      const [startHours, startMinutes] = values.startTime.split(":").map(Number);
+      startDateTime.setHours(startHours, startMinutes, 0);
+      const [endHours, endMinutes] = values.endTime.split(":").map(Number);
+      endDateTime.setHours(endHours, endMinutes, 0);
+  
+      // Duration in hours
+      const durationHours = (endDateTime.getTime() - startDateTime.getTime()) / (1000 * 60 * 60);
+  
+      // Call Gemini API with duration info
+      const expResponse = await fetch('/api/gemini', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(taskData),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'calculate-exp',
+          prompt: values.description,
+          timeframe: {
+            startDate: startDateTime.toISOString(),
+            endDate: endDateTime.toISOString(),
+            startTime: values.startTime,
+            endTime: values.endTime,
+            durationHours
+          }
+        })
       });
   
-      if (!response.ok) throw new Error('Failed to add task');
+      const expData = await expResponse.json();
   
-      toast({
-        title: "Success",
-        description: "Task added successfully!",
+      if (!expResponse.ok) {
+        console.error('Gemini API error:', expData);
+        throw new Error(expData.error || 'Failed to calculate experience points');
+      }
+  
+      const taskData = {
+        ...values,
+        exp: expData.exp,
+        status: "queued",
+        createdAt: new Date().toISOString()
+      };
+  
+      const taskResponse = await fetch('/api/tasks', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(taskData)
       });
+  
+      if (!taskResponse.ok) {
+        throw new Error('Failed to save task');
+      }
+  
+      toast({ title: "Success", description: "Task added successfully!" });
       form.reset();
+  
     } catch (error) {
+      const message = error instanceof Error ? error.message : 'An error occurred';
+      console.error('Task creation error:', error);
       toast({
         title: "Error",
-        description: "Failed to add task. Please try again.",
-        variant: "destructive",
+        description: message,
+        variant: "destructive"
       });
     }
   }

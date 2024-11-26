@@ -44,7 +44,7 @@ export default function TaskPage() {
     if (!task) return <div className="p-4">Task not found</div>;
 
     return (
-        <div className="max-w-4xl mx-auto p-4">
+        <div className="items-center p-5 mx-auto sm:mx-10 lg:mx-20 xl:mx-40">
             <h1 className="text-2xl font-bold mb-6">Task Details</h1>
             <TaskCard task={task} />
         </div>
