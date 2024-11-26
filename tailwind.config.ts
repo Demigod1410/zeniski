@@ -89,7 +89,7 @@ export default {
   		}
   	}
   },
-  plugins: [addVariablesForColors, require("tailwindcss-animate")]
+  plugins: [addVariablesForColors, require("tailwindcss-animate"), addVariablesForColors,]
 } ;
 
 function addVariablesForColors({ addBase, theme }: any) {

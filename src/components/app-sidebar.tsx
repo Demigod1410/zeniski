@@ -46,7 +46,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
-      <div className="border w-fit rounded-full mx-auto mt-5">
+      <div className="border w-fit zoom-in-150 mx-auto mt-5">
                 <Image
                     src="/logo.png"
                     alt="Zeniski Logo"

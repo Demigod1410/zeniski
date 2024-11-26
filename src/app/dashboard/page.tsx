@@ -6,8 +6,8 @@ export default async function OverviewPage() {
   
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">Project Overview</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <h1 className="text-3xl font-bold m-6">Overview</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-6">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Recent Tasks</CardTitle>

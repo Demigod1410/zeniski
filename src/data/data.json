@@ -1,16 +1,41 @@
 {
   "tasks": [
     {
-      "title": "Something",
-      "description": "dkjbvsdlzkjvbldsljfbvsldj",
+      "title": "make a game",
+      "description": "create a simple snake game using godot",
       "startDate": "2024-11-27T18:30:00.000Z",
       "endDate": "2024-11-28T18:30:00.000Z",
-      "startTime": "22:00",
-      "endTime": "22:00",
-      "exp": 50,
+      "startTime": "00:00",
+      "endTime": "00:00",
+      "exp": 150,
       "status": "queued",
-      "createdAt": "2024-11-26T19:10:40.640Z",
-      "id": "1732648240640"
+      "createdAt": "2024-11-26T23:15:50.247Z",
+      "id": "1732662950247"
+    },
+    {
+      "title": "make a website",
+      "description": "create a simple e-commerce store website using mern stack",
+      "startDate": "2024-11-28T18:30:00.000Z",
+      "endDate": "2024-12-03T18:30:00.000Z",
+      "startTime": "00:00",
+      "endTime": "00:00",
+      "exp": 300,
+      "status": "queued",
+      "createdAt": "2024-11-26T23:23:03.225Z",
+      "id": "1732663383225"
+    },
+    {
+      "title": "Create this project",
+      "description": "create a to do list with ai integration where ai can generate a roadmap to make your tasks smaller and easier to complete",
+      "startDate": "2024-11-26T18:30:00.000Z",
+      "endDate": "2024-11-26T18:30:00.000Z",
+      "startTime": "05:15",
+      "endTime": "06:00",
+      "exp": 200,
+      "status": "completed",
+      "createdAt": "2024-11-26T23:42:49.322Z",
+      "id": "1732664569322",
+      "updatedAt": "2024-11-26T23:49:41.240Z"
     }
   ]
 }
