@@ -36,11 +36,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       url: "/dashboard/view-tasks",
       isActive: currentPath === "/dashboard/view-tasks",
     },
-    {
-      title: "Analytics",
-      url: "/dashboard/analytics",
-      isActive: currentPath === "/dashboard/analytics",
-    },
+    // {
+    //   title: "Analytics",
+    //   url: "/dashboard/analytics",
+    //   isActive: currentPath === "/dashboard/analytics",
+    // },
   ]
 
   return (

@@ -38,17 +38,41 @@
       "updatedAt": "2024-11-26T23:49:41.240Z"
     },
     {
-      "title": "make a game ",
-      "description": "make a basic 2d snake game in godot ",
+      "title": "something new to add",
+      "description": "create a new zeniski project where there are more advanced ai features and gamification to make creating and doing tasks easy",
       "startDate": "2024-11-26T18:30:00.000Z",
-      "endDate": "2024-11-27T18:30:00.000Z",
-      "startTime": "05:23",
+      "endDate": "2024-11-26T18:30:00.000Z",
+      "startTime": "05:40",
       "endTime": "06:00",
-      "exp": 150,
+      "exp": 200,
       "status": "completed",
-      "createdAt": "2024-11-26T23:52:55.930Z",
-      "id": "1732665175930",
-      "updatedAt": "2024-11-26T23:58:04.191Z"
+      "createdAt": "2024-11-27T00:09:21.444Z",
+      "id": "1732666161444",
+      "updatedAt": "2024-11-27T00:10:07.397Z"
+    },
+    {
+      "title": "something that will be pending",
+      "description": "this will be a pending task to be displayed",
+      "startDate": "2024-11-26T18:30:00.000Z",
+      "endDate": "2024-11-26T18:30:00.000Z",
+      "startTime": "06:12",
+      "endTime": "06:13",
+      "exp": 50,
+      "status": "queued",
+      "createdAt": "2024-11-27T00:41:10.390Z",
+      "id": "1732668070390"
+    },
+    {
+      "title": "something that will be pending",
+      "description": "this will be a pending task to be displayed",
+      "startDate": "2024-11-26T18:30:00.000Z",
+      "endDate": "2024-11-26T18:30:00.000Z",
+      "startTime": "06:12",
+      "endTime": "06:13",
+      "exp": 50,
+      "status": "pending",
+      "createdAt": "2024-11-27T00:41:16.288Z",
+      "id": "1732668076288"
     }
   ]
 }
