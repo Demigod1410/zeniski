@@ -36,6 +36,19 @@
       "createdAt": "2024-11-26T23:42:49.322Z",
       "id": "1732664569322",
       "updatedAt": "2024-11-26T23:49:41.240Z"
+    },
+    {
+      "title": "make a game ",
+      "description": "make a basic 2d snake game in godot ",
+      "startDate": "2024-11-26T18:30:00.000Z",
+      "endDate": "2024-11-27T18:30:00.000Z",
+      "startTime": "05:23",
+      "endTime": "06:00",
+      "exp": 150,
+      "status": "completed",
+      "createdAt": "2024-11-26T23:52:55.930Z",
+      "id": "1732665175930",
+      "updatedAt": "2024-11-26T23:58:04.191Z"
     }
   ]
 }

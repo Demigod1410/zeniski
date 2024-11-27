@@ -26,16 +26,8 @@ function Features() {
 			title: "Level Up Your Life",
 			description: "Every completed task earns rewards, helping you progress in both life and Zeniski’s leaderboard."
 		},
-		{
-			icon: calendar,
-			title: "Stay on Schedule",
-			description: "Integrate seamlessly with Google Calendar and never miss a task or deadline."
-		},
-		{
-			icon: share,
-			title: "Share and Inspire",
-			description: "Post your achievements on LinkedIn and X directly from Zeniski to enhance your social presence."
-		}
+		
+		
 	];
 
 	const threeElements = benefits.slice(0,3);

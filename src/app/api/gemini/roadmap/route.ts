@@ -15,7 +15,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
     const prompt = `
       Act as a task breakdown expert. Create a roadmap for the following task by breaking it into 3-5 smaller subtasks.
