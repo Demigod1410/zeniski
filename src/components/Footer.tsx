@@ -26,7 +26,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/dashboard/add-task"
                   className="hover:text-white transition-colors duration-300"
                 >
                   Add Tasks
@@ -34,28 +34,21 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/dashboard/view-tasks"
                   className="hover:text-white transition-colors duration-300"
                 >
                   View Tasks
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors duration-300"
-                >
-                  Analytics
-                </a>
-              </li>
+              
             </ul>
           </div>
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
-          <p>New Delhi, India</p>
-          <p>Delhi 10001</p>
+          <p>Dehradun, India</p>
+          <p>Dehradun 248007</p>
           <p>Email: info@zeniski.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Phone: +91 7536050155</p>
         </div>
       </div>
       <p className="text-center text-xs pt-8">

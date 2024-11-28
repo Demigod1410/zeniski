@@ -8,9 +8,10 @@
       "startTime": "00:00",
       "endTime": "00:00",
       "exp": 150,
-      "status": "queued",
+      "status": "completed",
       "createdAt": "2024-11-26T23:15:50.247Z",
-      "id": "1732662950247"
+      "id": "1732662950247",
+      "updatedAt": "2024-11-27T10:11:23.451Z"
     },
     {
       "title": "make a website",
@@ -73,6 +74,70 @@
       "status": "pending",
       "createdAt": "2024-11-27T00:41:16.288Z",
       "id": "1732668076288"
+    },
+    {
+      "title": "make another website",
+      "description": "a website with html and css with mongoDB as backend ",
+      "startDate": "2024-11-26T18:30:00.000Z",
+      "endDate": "2024-11-28T18:30:00.000Z",
+      "startTime": "16:00",
+      "endTime": "18:00",
+      "exp": 300,
+      "status": "completed",
+      "createdAt": "2024-11-27T10:29:17.925Z",
+      "id": "1732703357925",
+      "updatedAt": "2024-11-27T10:30:24.200Z"
+    },
+    {
+      "title": "lecture 1",
+      "description": "This is my first lecture. I ll teaching cryptography. In cryptography, i ll teach diffie hellman based key management system.",
+      "startDate": "2024-11-27T18:30:00.000Z",
+      "endDate": "2024-11-29T18:30:00.000Z",
+      "startTime": "10:00",
+      "endTime": "11:10",
+      "exp": 350,
+      "status": "completed",
+      "createdAt": "2024-11-27T11:05:40.082Z",
+      "id": "1732705540082",
+      "updatedAt": "2024-11-27T11:07:29.044Z"
+    },
+    {
+      "title": "ai class",
+      "description": "make notes about ai applications and its different uses ",
+      "startDate": "2024-11-27T18:30:00.000Z",
+      "endDate": "2024-11-27T18:30:00.000Z",
+      "startTime": "15:16",
+      "endTime": "16:00",
+      "exp": 100,
+      "status": "completed",
+      "createdAt": "2024-11-28T09:45:49.407Z",
+      "id": "1732787149407",
+      "updatedAt": "2024-11-28T09:46:56.917Z"
+    },
+    {
+      "title": "10,000 push ups ",
+      "description": "do 10,000 push ups, 20 km run, 5,000 crunches, 2000 pull ups ",
+      "startDate": "2024-11-28T18:30:00.000Z",
+      "endDate": "2024-12-06T18:30:00.000Z",
+      "startTime": "01:00",
+      "endTime": "23:59",
+      "exp": 400,
+      "status": "queued",
+      "createdAt": "2024-11-28T09:52:32.321Z",
+      "id": "1732787552321"
+    },
+    {
+      "title": "cycling ",
+      "description": "cycling everyday at least 10 kms",
+      "startDate": "2024-11-28T18:30:00.000Z",
+      "endDate": "2024-12-06T18:30:00.000Z",
+      "startTime": "10:00",
+      "endTime": "23:00",
+      "exp": 100,
+      "status": "completed",
+      "createdAt": "2024-11-28T09:57:36.881Z",
+      "id": "1732787856881",
+      "updatedAt": "2024-11-28T09:58:48.847Z"
     }
   ]
 }
