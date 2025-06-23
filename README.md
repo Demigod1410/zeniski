@@ -1,4 +1,4 @@
-# Zeniski 🧘‍♂️
+# Zeniski 
 
 **A Zen-Inspired Web Application Built with Next.js**
 
