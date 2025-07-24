@@ -1,7 +1,6 @@
 // src/components/task-card.tsx
 import { useRouter } from 'next/navigation';
 import { Zap } from 'lucide-react';
-import Image from 'next/image';
 
 interface Task {
     id: string;

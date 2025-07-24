@@ -30,8 +30,8 @@ interface RoadmapLoaderButtonProps {
 export function RoadmapLoaderButton({
   loadingStates,
   onComplete,
-  onStart,
-  className
+ 
+  
 }: RoadmapLoaderButtonProps) {
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);

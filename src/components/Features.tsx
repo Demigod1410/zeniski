@@ -4,8 +4,7 @@ import FeatureCard from "./ui/featureCard";
 import search from '@/assets/search.gif'
 import increase from '@/assets/increase.gif'
 import analytics from '@/assets/analytics.gif'
-import calendar from '@/assets/calendar.gif'
-import share from '@/assets/share.gif'
+
 
 
 function Features() {

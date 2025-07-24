@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zeniski - AI-Powered Task Management
 
-## Getting Started
+Zeniski is a modern task management platform that combines productivity with gamification. Transform your to-do list into an engaging experience with AI-powered roadmap generation, experience points, and social features.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **AI-Powered Roadmaps**: Generate detailed task breakdowns using Gemini AI
+- **Gamification**: Earn experience points and level up by completing tasks
+- **Task Management**: Create, edit, and track tasks with deadlines and priorities
+- **User Authentication**: Secure sign-in/sign-up with Clerk
+- **Responsive Design**: Beautiful UI with Tailwind CSS and Framer Motion animations
+- **Dashboard Analytics**: Track your productivity and progress
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 14, React, TypeScript
+- **Styling**: Tailwind CSS, Framer Motion
+- **Authentication**: Clerk
+- **AI Integration**: Google Gemini API
+- **Database**: MongoDB
+- **Package Manager**: pnpm
+
+## 🏃‍♂️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shubhojit-mitra-dev/zeniski.git
+   cd zeniski
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory:
+   ```bash
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+   GEMINI_API_KEY=your_gemini_api_key
+   ```
+
+4. **Run the development server**
+   ```bash
+   pnpm dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── api/               # API routes
+│   ├── dashboard/         # Dashboard pages
+│   ├── sign-in/          # Authentication pages
+│   └── sign-up/
+├── components/            # Reusable React components
+│   ├── ui/               # UI components (buttons, cards, etc.)
+│   └── ...               # Feature-specific components
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions and configurations
+└── data/                 # Static data and configurations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎮 How It Works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Sign Up/Sign In**: Create an account or sign in using Clerk authentication
+2. **Create Tasks**: Add tasks with descriptions, deadlines, and difficulty levels
+3. **Generate Roadmaps**: Use AI to break down complex tasks into manageable steps
+4. **Earn XP**: Complete tasks to earn experience points and level up
+5. **Track Progress**: Monitor your productivity through the dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is open source and available under the [MIT License](LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📞 Contact
 
-## Deploy on Vercel
+- **Email**: info@zeniski.com
+- **Phone**: +91 7536050155
+- **Location**: Dehradun, India
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ using Next.js and modern web technologies.

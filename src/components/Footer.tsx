@@ -1,3 +1,4 @@
+import Link from "next/link";
 function Footer() {
   return (
     <footer className="bg-black text-gray-400 py-12">
@@ -17,28 +18,28 @@ function Footer() {
             </h2>
             <ul>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/dashboard"
                   className="hover:text-white transition-colors duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/dashboard/add-task"
                   className="hover:text-white transition-colors duration-300"
                 >
                   Add Tasks
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/dashboard/view-tasks"
                   className="hover:text-white transition-colors duration-300"
                 >
                   View Tasks
-                </a>
+                </Link>
               </li>
               
             </ul>
