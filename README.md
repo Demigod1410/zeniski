@@ -118,7 +118,7 @@ NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 # MongoDB Configuration
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/zeniski
+MONGODB_URI=mongodb+srv:YourMongoDBConnectionString
 
 # Google AI (Gemini)
 GEMINI_API_KEY=your_gemini_api_key
