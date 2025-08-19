@@ -371,7 +371,6 @@ pnpm install
 ## 🎯 Development Roadmap
 
 ### Completed ✅
->>>>>>> 9ee045966e2749c1ea36a442971a7c4b27eb0b84
 - [x] Project Setup
 - [x] Amazing Landing Page
 - [x] Dashboard setup

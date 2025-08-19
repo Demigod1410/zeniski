@@ -147,6 +147,7 @@ export default function TaskPage() {
         if (!response.ok) throw new Error('Failed to update task');
     
         toast.toast({
+          id: Date.now().toString(),
           title: "Success",
           description: "Task marked as completed!",
         });
@@ -156,6 +157,7 @@ export default function TaskPage() {
     
       } catch (error) {
         toast.toast({
+          id: Date.now().toString(),
           title: "Error",
           description: "Failed to complete task",
           variant: "destructive",
@@ -186,6 +188,7 @@ export default function TaskPage() {
           }
       
           toast.toast({
+            id: Date.now().toString(),
             title: "Success",
             description: "Task deleted successfully",
           });
@@ -196,6 +199,7 @@ export default function TaskPage() {
         } catch (error) {
           console.error('Delete error:', error);
           toast.toast({
+            id: Date.now().toString(),
             title: "Error",
             description: error instanceof Error ? error.message : 'Failed to delete task',
             variant: "destructive"
@@ -232,6 +236,7 @@ export default function TaskPage() {
         } catch (error) {
           console.error('Roadmap error:', error);
           toast.toast({
+            id: Date.now().toString(),
             title: "Error",
             description: error instanceof Error ? error.message : "Failed to generate roadmap",
             variant: "destructive"

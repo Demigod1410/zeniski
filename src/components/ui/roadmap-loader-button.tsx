@@ -5,11 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 
-interface LoadingState {
-  title: string;
-  description: string;
-}
-
 // interface RoadmapLoaderButtonProps {
 //   loadingStates: LoadingState[];
 //   onComplete?: () => void;
