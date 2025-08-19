@@ -37,6 +37,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # Zeniski - Task Management Platform
 
+Repository: [https://github.com/Demigod1410/zeniski.git](https://github.com/Demigod1410/zeniski.git)
+
 - [x] Project Setup
 - [x] Amazing Landing Page
 - [x] Dashboard setup

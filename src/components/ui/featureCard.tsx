@@ -13,16 +13,15 @@ const FeatureCard: React.FC<FeatureCardProps> = ({icon, heading, subheading}) =>
     return (
         <>
             <BackgroundGradient>
-                <div className="rounded-[22px] p-5 sm:p-8 bg-black dark:bg-zinc-900">
-                    <div className="">
-                        <div className='flex pb-5 gap-6'>
-
-                        <Image src={icon} width={30} className='text-black bg-trasparent' alt={'icon'} />
-                        <p className="text-sm font-bold sm:text-base text-gray-300 dark:text-neutral-900">
+                <div className="rounded-[22px] p-6 sm:p-8 bg-black dark:bg-zinc-900 h-64 flex flex-col justify-between">
+                    <div className="h-full flex flex-col">
+                        <div className='flex items-center pb-6 gap-6'>
+                        <Image src={icon} width={36} height={36} className='text-black bg-trasparent' alt={'icon'} />
+                        <h3 className="text-lg sm:text-xl font-bold text-gray-200 dark:text-neutral-900 leading-tight">
                             {heading}
-                        </p>
+                        </h3>
                         </div>
-                        <p className="text-xs text-gray-300 dark:text-neutral-400">
+                        <p className="text-sm sm:text-base text-gray-300 dark:text-neutral-400 flex-grow leading-relaxed">
                             {subheading}
                         </p>
                     </div>
