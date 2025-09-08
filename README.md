@@ -118,7 +118,7 @@ NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 # MongoDB Configuration
-MONGODB_URI=mongodb+srv:YourMongoDBConnectionString
+MONGODB_URI:YourMongoDBConnectionString
 
 # Google AI (Gemini)
 GEMINI_API_KEY=your_gemini_api_key
@@ -477,15 +477,4 @@ And all the contributors who help make this project better! 🌟
 ![AI Roadmap](https://github.com/user-attachments/assets/d12a4a87-486c-46cf-8453-0c2e927889fa)
 *AI-powered roadmap generation for project planning*
 
-</div>
-
----
-
-<div align="center">
-
-**Made with ❤️ by [Demigod1410](https://github.com/Demigod1410)**
-
-⭐ Star this repository if you found it helpful!
-
-</div>
 
