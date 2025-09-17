@@ -36,8 +36,8 @@ function Features() {
 		<div className="py-12 h-screen bg-black-900 flex flex-col gap-5 sm:gap-10">
 
 			<div className="text-center ">
-				<h2 className="mt-20 md:mt-0 text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Powerful Features</h2>
-				<p className="mt-5  leading-8  tracking-tight text-white ">Everything you need to boost your productivity <br/> and social presence</p>
+				<h2 className="mt-20 md:mt-0 text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Powerful Features</h2>
+				<p className="mt-6 text-2xl  leading-8 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Everything you need to boost your productivity <br/> and social presence</p>
 			</div>
 			<div className="sm:mx-30 mx-10 mt-10">
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
